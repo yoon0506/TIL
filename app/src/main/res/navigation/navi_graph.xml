@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragHome">
+
+    <fragment
+        android:id="@+id/fragHome"
+        android:name="com.yoon.mycalendar.MyBookFragment"
+        tools:layout="@layout/fragment_my_book" />
+
+    <fragment
+        android:id="@+id/fragCalendar"
+        android:name="com.yoon.mycalendar.LoginFragment"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/fragContract"
+        android:name="com.yoon.mycalendar.CalendarFragment"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/fragFriends"
+        android:name="com.yoon.mycalendar.EmptyFragment"
+        tools:layout="@layout/fragment_empty" />
+
+</navigation>
