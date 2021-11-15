@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/fragHome"
         android:name="com.yoon.mycalendar.MyBookFragment"
-        tools:layout="@layout/fragment_my_book" />
+        tools:layout="@layout/fragment_my_book" >
+        <action
+            android:id="@+id/action_fragEbook_to_fragEbookDetail"
+            app:destination="@id/fragEbookDetail" />
+    </fragment>
 
     <fragment
         android:id="@+id/fragCalendar"
@@ -24,5 +28,14 @@
         android:id="@+id/fragFriends"
         android:name="com.yoon.mycalendar.EmptyFragment"
         tools:layout="@layout/fragment_empty" />
+
+    <fragment
+        android:id="@+id/fragEbookDetail"
+        android:name="com.yoon.mycalendar.EbookDetailFragment"
+        tools:layout="@layout/fragment_ebook_detail" >
+        <action
+            android:id="@+id/action_fragEbookDetail_to_fragMyBook"
+            app:destination="@id/fragHome" />
+    </fragment>
 
 </navigation>
