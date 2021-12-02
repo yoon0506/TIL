@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ReadBookInfoCustomView">
+        <attr name="stringData" format="dimension" />
+        <attr name="bookCover" format="reference|integer"/>
+        <attr name="bookTitle" format="reference|string"/>
+        <attr name="readTime" format="reference|string"/>
+        <attr name="highLightCount" format="reference|string"/>
+        <attr name="moreHighlight" format="reference|string"/>
+        <attr name="bookReport" format="reference|string"/>
+    </declare-styleable>
+
+</resources>
